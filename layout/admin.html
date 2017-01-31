@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        
+        <title>Movie Flix</title>
+        
+        <link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/style.css"> 
+		
+        <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+        
+        <!-- BootStrap -->
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+		  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.dataTables.min.css">
+        
+        <script type="text/javascript">
+        </script>
+    </head>
+    <body>
+        
+        <div id="header">
+            <nav id="header_menu">
+                <ul  class="left" >
+                    <li><a href="#" style="color: #009933;padding: 0;">Movie Flix</a></li>
+                </ul>
+                <ul class="right">
+                    
+					<li><a href="#" data-toggle="modal" data-target="#myModal3">Add Title</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">LogOut</a></li>
+                       
+                     
+                </ul>
+
+            </nav>
+
+
+</div>
+        </div> 
+	
+
+							
+<section id="home_page">
+    
+	<div class="container">
+	<div class="row">
+	<div class="page-header">
+        <h3>List of MOVIES and SERIES</h3>
+    </div>
+	<table id="example" class="display nowrap" style="display:none" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Image</th>
+                <th>IMDB Rating</th>
+                <th>Type</th>
+                <th>Year</th>
+                <th>Genre</th>
+                <th>Average Rating</th>
+				<th>IMDB link</th>
+				<th>Update</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger</td>
+                <td> <img src="images/movie1.jpg" alt="First slide"></td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+               
+                <td>t.nixon@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Garrett</td>
+                <td>Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+                
+                <td>g.winters@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Ashton</td>
+                <td>Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+                
+                <td>a.cox@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Cedric</td>
+                <td>Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2012/03/29</td>
+                <td>$433,060</td>
+                
+                <td>c.kelly@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Airi</td>
+                <td>Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+    
+                <td>a.satou@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Brielle</td>
+                <td>Williamson</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2012/12/02</td>
+                <td>$372,000</td>
+        
+                <td>b.williamson@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Herrod</td>
+                <td>Chandler</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td>59</td>
+                <td>2012/08/06</td>
+                <td>$137,500</td>
+         
+                <td>h.chandler@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Rhona</td>
+                <td>Davidson</td>
+                <td>Integration Specialist</td>
+                <td>Tokyo</td>
+                <td>55</td>
+                <td>2010/10/14</td>
+                <td>$327,900</td>
+                
+                <td>r.davidson@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Colleen</td>
+                <td>Hurst</td>
+                <td>Javascript Developer</td>
+                <td>San Francisco</td>
+                <td>39</td>
+                <td>2009/09/15</td>
+                <td>$205,500</td>
+                
+                <td>c.hurst@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Sonya</td>
+                <td>Frost</td>
+                <td>Software Engineer</td>
+                <td>Edinburgh</td>
+                <td>23</td>
+                <td>2008/12/13</td>
+                <td>$103,600</td>
+                
+                <td>s.frost@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Jena</td>
+                <td>Gaines</td>
+                <td>Office Manager</td>
+                <td>London</td>
+                <td>30</td>
+                <td>2008/12/19</td>
+                <td>$90,560</td>
+                
+                <td>j.gaines@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Quinn</td>
+                <td>Flynn</td>
+                <td>Support Lead</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2013/03/03</td>
+                <td>$342,000</td>
+                
+                <td>q.flynn@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Charde</td>
+                <td>Marshall</td>
+                <td>Regional Director</td>
+                <td>San Francisco</td>
+                <td>36</td>
+                <td>2008/10/16</td>
+                <td>$470,600</td>
+               
+                <td>c.marshall@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Haley</td>
+                <td>Kennedy</td>
+                <td>Senior Marketing Designer</td>
+                <td>London</td>
+                <td>43</td>
+                <td>2012/12/18</td>
+                <td>$313,500</td>
+                
+                <td>h.kennedy@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>Tatyana</td>
+                <td>Fitzpatrick</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>19</td>
+                <td>2010/03/17</td>
+                <td>$385,750</td>
+                
+                <td>t.fitzpatrick@datatables.net</td>
+				<td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+            </tr>
+            
+            
+                    </tbody>
+    </table>
+	
+	</div>
+	
+	
+<div class="row" style="margin-bottom:100px;">
+<div class="col-sm-12">
+
+    <div class="page-header">
+        <h3>LATEST MOVIES</h3>
+    </div>
+        
+
+
+
+  <div id="myCarousel" class="row carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        
+        <ul class="thumbnails">
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>Movie 1</h4>
+              <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>Movie 2</h4>
+                            <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>Movie 3</h4>
+        
+              <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>Movie 4</h4>
+              <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+        </ul>
+      </div><!-- /Slide1 --> 
+
+
+      <div class="item">
+        <ul class="thumbnails">
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>Movie 5</h4>
+              <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>Movie 6</h4>
+             
+              <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>PMovie 7</h4>
+              
+              <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>Movie 8</h4>
+              
+              <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+        </ul>
+      </div><!-- /Slide2 --> 
+
+<!--
+      <div class="item">
+        <ul class="thumbnails">
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>Praesent commodo</h4>
+              <p>Nullam Condimentum Nibh Etiam Sem</p>
+              <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>Praesent commodo</h4>
+              <p>Nullam Condimentum Nibh Etiam Sem</p>
+              <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>Praesent commodo</h4>
+              <p>Nullam Condimentum Nibh Etiam Sem</p>
+              <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+
+          <li class="col-sm-3">      
+            <div class="thumbnail">
+              <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+            </div>
+            <div class="caption-box">
+              <h4>Praesent commodo</h4>
+              <p>Nullam Condimentum Nibh Etiam Sem</p>
+              <a class="btn btn-success btn-mini" href="#">Read More</a>
+            </div>
+          </li>
+        </ul>
+      </div><!-- /Slide3 --> 
+
+
+
+    </div><!-- /Wrapper for slides .carousel-inner -->
+
+
+
+    <!-- Control box 
+    <div class="control-box">                            
+      <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
+      <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
+    </div><!-- /.control-box -->   
+
+
+
+  </div><!-- /#myCarousel -->
+
+
+</div><!-- /.col-sm-12 -->          
+</div><!-- /.row --> 
+</div><!-- /.container -->
+
+</section>
+
+ <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4>Add Movie/Series</h4>
+                    <div class="login-form">
+                        <form action="#" method="post">
+                            <input type="text" name="name" placeholder="Title" required="">
+                            <input type="text" name="name" placeholder="Type" required="">
+                           <input type="text" name="name" placeholder="Year" required="">
+                           <input type="text" name="name" placeholder="Director" required="">
+                           
+                            <div class="tp">
+                                <input type="submit" value="ADD NOW">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<section class="copyright">
+    &copy; Movie Flix
+</section>
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+        
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
